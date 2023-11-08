@@ -31,7 +31,7 @@ def get_BGR_image(image):
     return image
 
 
-def get_model(model_name):
+def get_model(model_name, device):
     if model_name == 'BLIP2':
         from .test_blip2 import TestBlip2
         return TestBlip2()
