@@ -164,7 +164,7 @@ class Flowers102(VisionDataset):
 
 
 class ImageNetDataset(ImageNet):
-    def __init__(self, root: str=f"{DATA_DIR}/ImageNet", split: str = "val", **kwargs: Any):
+    def __init__(self, root: str="/fs/cml-datasets/ImageNet/ILSVRC2012", split: str = "val", **kwargs: Any):
         super().__init__(root, split, **kwargs)
 
     def __getitem__(self, index: int) -> Tuple[str, Sequence[str]]:
